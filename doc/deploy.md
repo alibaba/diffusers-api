@@ -20,29 +20,29 @@
 - ControlNet相关模型放在controlnet文件夹中【可选】
 - 讲预置的翻译模型放入translate文件夹中【可选】
 
-<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/prepare_model.png" width="50%">
+<img src="../assets/prepare_model.png" width="50%">
 
 - base_model 文件夹支持下列格式：
 
   - diffusers api支持的多文件夹格式 （单个的.safetensors/.ckpt文件将自动转化）
 
-![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/arch.png)
+![img](../assets/arch.png)
 
 
 - controlnet文件夹需包含下列文件【使用controlnet时必须】
 
-<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/arch_ctr.png" width="50%">
+<img src="../assets/arch_ctr.png" width="50%">
 
 - optimized_model文件夹需包含以下三个/四个文件（controlnet会生成额外的controlnet.pt）。在部署服务时打开--use_blade开关，Blade模型将自动在后台优化，优化完成后自动进行模型替换
 
-<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/arch_opt.png" width="50%">
+<img src="../assets/arch_opt.png" width="50%">
 
 - translate文件夹，您可通过下方链接下载模型文件内置翻译模型。【可选】
 
   - 模型下载地址：https://www.modelscope.cn/models/damo/nlp_csanmt_translation_zh2en/files
   - 参考下载链接：https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/model/damo_translate.tar.gz
 
-<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/arch_tran.png" width="50%">
+<img src="../assets/arch_tran.png" width="50%">
 
 
 #### 步骤二：模型部署
@@ -53,7 +53,7 @@
 
 - **Step1：创建EAS服务**
 
-![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/create.png)
+![img](../assets/create.png)
 
 - **Step2：选择镜像部署并修改相应的参数**
 
@@ -132,7 +132,7 @@
 
  - 点击“部署”按钮，等待服务部署完成即可。
 
-![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/success.png)
+![img](../assets/success.png)
 
  - 点击上图的调用信息获得 测试所需的：
 

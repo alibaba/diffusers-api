@@ -4,7 +4,7 @@
 
 本项目提供了基于PAI-EAS的[diffusers api](https://github.com/huggingface/diffusers) 云服务实现。
 
-![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/pipeline.png)
+![img](./assets/pipeline.png)
 
 
 经PAI-Blade优化后，显著提升模型推理性能:
