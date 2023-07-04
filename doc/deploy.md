@@ -20,29 +20,29 @@
 - ControlNet相关模型放在controlnet文件夹中【可选】
 - 讲预置的翻译模型放入translate文件夹中【可选】
 
-<img src="https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59656326/1687155666213-8d1acdfe-c5f5-4f89-bcf7-ada8571859da.png" width="50%">
+<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/prepare_model.png" width="50%">
 
 - base_model 文件夹支持下列格式：
 
   - diffusers api支持的多文件夹格式 （单个的.safetensors/.ckpt文件将自动转化）
 
-![img](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59656326/1679892857055-f0a791ec-7fce-4079-bf3b-2b6940b234ac.png)
+![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/arch.png)
 
 
 - controlnet文件夹需包含下列文件【使用controlnet时必须】
 
-<img src="https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59656326/1681884088194-aac86057-bc1c-4f3c-92e3-9d17e2bc8f14.png" width="50%">
+<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/arch_ctr.png" width="50%">
 
 - optimized_model文件夹需包含以下三个/四个文件（controlnet会生成额外的controlnet.pt）。在部署服务时打开--use_blade开关，Blade模型将自动在后台优化，优化完成后自动进行模型替换
 
-<img src="https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59656326/1681356211597-890a5282-ed7a-4d8a-a219-0d470e26d4da.png" width="50%">
+<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/arch_opt.png" width="50%">
 
 - translate文件夹，您可通过下方链接下载模型文件内置翻译模型。【可选】
 
   - 模型下载地址：https://www.modelscope.cn/models/damo/nlp_csanmt_translation_zh2en/files
   - 参考下载链接：https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/model/damo_translate.tar.gz
 
-<img src="https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59656326/1681882532772-3e14ff1a-b024-4d97-9be8-308358ea6c1c.png" width="50%">
+<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/arch_tran.png" width="50%">
 
 
 #### 步骤二：模型部署
@@ -53,7 +53,7 @@
 
 - **Step1：创建EAS服务**
 
-![img](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59656326/1679894850407-f7ae25e5-f4f5-40aa-be54-1f07fc5e8661.png)
+![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/create.png)
 
 - **Step2：选择镜像部署并修改相应的参数**
 
@@ -105,6 +105,7 @@
   ```
 
   - containers.command 命令
+
 | key             | value                 | 说明                                 |
 | --------------- | --------------------- | ------------------------------------ |
 | --func_name     | base                  | 同时支持t2i/i2i/inpaint/outpaint功能 |
@@ -131,7 +132,7 @@
 
  - 点击“部署”按钮，等待服务部署完成即可。
 
-![img](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/59656326/1679901451470-352461b3-44d3-470a-a21e-e73c2a34a0b2.png)
+![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/success.png)
 
  - 点击上图的调用信息获得 测试所需的：
 

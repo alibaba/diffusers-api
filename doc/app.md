@@ -20,8 +20,8 @@
 我们在[app.py](../diffusers/app.py)已经实现了部分基于diffusers api的功能实现，本节通过流程图的显示，对核心代码流程进行展示，方便您进行二次开发。
 
 #### initialize()
-<img src="../assets/init.jpg" width="80%">
+<img src="https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/init.jpg" width="80%">
 
 #### process(data)
 
-![img](../assets/app.jpg)
+![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/app.jpg)

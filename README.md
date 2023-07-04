@@ -4,7 +4,7 @@
 
 本项目提供了基于PAI-EAS的[diffusers api](https://github.com/huggingface/diffusers) 云服务实现。
 
-![img](./assets/pipeline.png)
+![img](https://pai-vision-exp.oss-cn-zhangjiakou.aliyuncs.com/zxy/diffusers/assets/pipeline.png)
 
 
 经PAI-Blade优化后，显著提升模型推理性能:
@@ -85,7 +85,6 @@ PAI-SDWEBUI解决方案为您提供了：
 
  ```bash
   # EAS部署时 根据您所部署服务的region的不同 region可替换为hangzhou/shanghai等 该镜像下载自带加速 服务部署快
-
   eas-registry-vpc.cn-{region}.cr.aliyuncs.com/pai-eas/diffuser-inference:2.2.1-py38-cu113-unbuntu2004-blade-public
 
   # 公开镜像
@@ -96,7 +95,7 @@ PAI-SDWEBUI解决方案为您提供了：
 
 - 自定义processor开发
 
-  - 您可修改预测服务主文件app.py 进行自定义processor的开发。[这里](./doc/app.md)我们简单梳理本服务的流程，便于您进行二次开发。
+  - 您可修改预测服务主文件[app.py](./diffusers/app.py) 进行自定义processor的开发。[这里](./doc/app.md)我们简单梳理本服务的流程，便于您进行二次开发。
 
   - 更多PAI-EAS的自定义processor开发请参考[官方文档](https://help.aliyun.com/document_detail/143418.html?spm=a2c4g.130248.0.0.3c316f27SLZN0o)。
 
