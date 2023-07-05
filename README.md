@@ -41,7 +41,7 @@
 
 - 基于PAI-Blade 进行推理优化
 
-  -  降低 Text2Img、Img2Img 推理流程的端到端延迟 2.3 倍，同时可显著降低省显存占用，超过TensorRT-v8.5等业内SOTA优化手段
+  -  降低 Text2Img、Img2Img 推理流程的端到端延迟 2.3 倍，同时可显著降低显存占用，超过TensorRT-v8.5等业内SOTA优化手段
 
 - 扩展和兼容diffusers API和Web UI，以适配社区可下载的模型
 

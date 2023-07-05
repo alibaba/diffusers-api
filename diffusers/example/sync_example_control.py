@@ -13,9 +13,9 @@ from PIL import Image, PngImagePlugin
 
 ENCODING = 'utf-8'
 
-hosts = 'http://1502318844610933.cn-hangzhou.pai-eas.aliyuncs.com/api/predict/diffuser_control'
+hosts = 'http://xxx.cn-hangzhou.pai-eas.aliyuncs.com/api/predict/service_name'
 head = {
-    'Authorization': 'ZTMyNDFkOGFiYTNiZTlhZjljODMzZmI1ZGY2ZWU3YzIxMTZiMDM3NA=='
+    'Authorization': 'xxx'
 }
 
 

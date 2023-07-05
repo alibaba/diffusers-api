@@ -6,10 +6,10 @@ if __name__ == '__main__':
     # 创建输出队列对象，⽤于订阅读取输出结果数据。
 
     sink_queue = QueueClient(
-        'http://1502318844610933.cn-hangzhou.pai-eas.aliyuncs.com',
-        'diffuser_base_ch_async/sink')
+        'http://xxx.cn-hangzhou.pai-eas.aliyuncs.com',
+        'service_name/sink')
     sink_queue.set_token(
-        'NDJkZjAwMzdlNDMzMjFmYWI4ODZmYmJkMzgwZDEzNmFlNTkyNDBiOQ==')
+        'xxx')
 
     sink_queue.init()
 

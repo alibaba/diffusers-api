@@ -5,10 +5,10 @@ import json
 from eas_prediction import PredictClient, StringRequest
 
 if __name__ == '__main__':
-    client = PredictClient('http://1502318844610933.cn-hangzhou.pai-eas.aliyuncs.com/',
-                           'diffuser_base_ch_async')
+    client = PredictClient('http://xxx.cn-hangzhou.pai-eas.aliyuncs.com/',
+                           'service_name')
     client.set_token(
-        'NDJkZjAwMzdlNDMzMjFmYWI4ODZmYmJkMzgwZDEzNmFlNTkyNDBiOQ==')
+        'xxx')
 
     client.init()
 

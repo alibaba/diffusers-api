@@ -15,14 +15,12 @@ from PIL import Image, PngImagePlugin
 
 ENCODING = 'utf-8'
 
-hosts = 'http://1502318844610933.cn-hangzhou.pai-eas.aliyuncs.com/api/predict/diffuser_base_ch'
+hosts = 'http://xxx.cn-hangzhou.pai-eas.aliyuncs.com/api/predict/service_name'
 head = {
-    'Authorization': 'ZmViY2IyNTY2ZDA3ZWUyMjcxZWQyZDgzNjA1NzhjODE3YmE5MDUyNw=='
+    'Authorization': 'xxx'
 }
 
-# func_list = ['t2i','i2i','inpaint','outpaint']
-func_list = ['outpaint']
-
+func_list = ['t2i','i2i','inpaint','outpaint']
 
 def decode_base64(image_base64, save_file):
     img = Image.open(BytesIO(base64.urlsafe_b64decode(image_base64)))
