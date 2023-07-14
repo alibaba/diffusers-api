@@ -345,8 +345,12 @@ def get_weighted_text_embeddings(
                   2) * max_embeddings_multiples + 2
 
     # pad the length of tokens and weights
-    bos = pipe.tokenizer.bos_token_id
-    eos = pipe.tokenizer.eos_token_id
+    if isinstance(pipe.tokenizer, CLIPTokenizer):
+        bos = pipe.tokenizer.bos_token_id
+        eos = pipe.tokenizer.eos_token_id
+    else:
+        bos = pipe.tokenizer.cls_token_id
+        eos = pipe.tokenizer.sep_token_id
     pad = getattr(pipe.tokenizer, 'pad_token_id', eos)
     prompt_tokens, prompt_weights = pad_tokens_and_weights(
         prompt_tokens,
